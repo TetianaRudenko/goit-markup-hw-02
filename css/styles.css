@@ -1,0 +1,41 @@
+/* main color background: #757575;  */
+/* secondary color background: #2196F3;*/ 
+/* primary : #212121; */ 
+/*logo color  #000000, #2196F3); */ 
+/* hero, focus white color: #FFFFFF;*/
+/* hero, focus bgc color: background: #2196F3;*/
+/* section team F5F4FA*/
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #ffffff;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+    --brand-color: #000000;
+}
+ body {
+    background-color: var(--primary-text-color);
+    color: var(--title-text-color);
+    font-family: Roboto, sans-serif;
+ }
+
+.logo {
+    color: var(--brand-color);
+}
+
+.logo-accent {
+    color: var(--accent-color)
+}
+
+.logo:hover, .logo-accent:hover {
+    color: var(--primary-white-color);
+}
+
+
+
+
+    
+.section {
+    /* Інші стилі */
+    border: 2px solid var(--brand-color);
+}
