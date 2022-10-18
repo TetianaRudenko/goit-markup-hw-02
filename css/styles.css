@@ -5,37 +5,115 @@
 /* hero, focus white color: #FFFFFF;*/
 /* hero, focus bgc color: background: #2196F3;*/
 /* section team F5F4FA*/
+/*secondary-white: rgba(255, 255, 255, 0.6)*/
+/*primary-background-color: #F5F5F5;*/
+/*secondary-background-color: ##F5F4FA;*/
+
+
 
 :root {
+    --primary-background-color: #F5F5F5;
+    --secondary-background-color: #F5F4FA;
     --primary-text-color: #757575;
-    --title-text-color: #ffffff;
+    --secondary-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #ffffff;
+    --secondary-white: rgba(255, 255, 255, 0.6);
     --brand-color: #000000;
+    --footer-bg-color: #2F303A;
 }
  body {
-    background-color: var(--primary-text-color);
-    color: var(--title-text-color);
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
  }
 
+.list {
+    list-style: none;
+ }
+.link {
+    text-decoration: none;
+ }
+
+/*Стилі index.html*/
+/*header*/
 .logo {
     color: var(--brand-color);
+    text-decoration: none;
+}
+.logo-accent {
+    color: var(--accent-color);
 }
 
-.logo-accent {
+.site-nav .link {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.contact-nav .link {
+    color: var(--primary-text-color);
+}
+.contact-nav .link:hover,
+.contact-nav .link:focus {
     color: var(--accent-color)
 }
 
-.logo:hover, .logo-accent:hover {
+/*section hero*/
+.hero-title {
+    color: var(--primary-white-color)
+}
+/*button hero*/
+.button {
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
+    border: var(--secondary-background-color);
+}
+/*.button.active {
     color: var(--primary-white-color);
+    background: var(--accent-color);
+    border: var(--accent-color);*/
+
+.button:hover,
+.button:focus,
+.button:active {
+    color: var(--primary-white-color);
+    background: var(--accent-color);
+    border: var(--accent-color);
 }
 
+.section-title {
+    color: var(--secondary-text-color);
+}
+.title {
+    color: var(--secondary-text-color);
+}
 
+/*footer*/
+footer {
+    background-color: var(--footer-bg-color);
+}
+.footer .logo {
+    color: var(--primary-white-color);
+}
+.address {
+    font-style: normal;
+}
+.guide {
+    color: var(--primary-white-color);
 
-
-    
-.section {
-    /* Інші стилі */
-    border: 2px solid var(--brand-color);
+}
+.contact {
+    color: var(--secondary-white);
+}
+/*Стилі portfolio.html*/
+.button.filter:hover {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
 }
