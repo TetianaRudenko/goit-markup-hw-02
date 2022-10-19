@@ -1,16 +1,3 @@
-/* main color background: #757575;  */
-/* secondary color background: #2196F3;*/ 
-/* primary : #212121; */ 
-/*logo color  #000000, #2196F3); */ 
-/* hero, focus white color: #FFFFFF;*/
-/* hero, focus bgc color: background: #2196F3;*/
-/* section team F5F4FA*/
-/*secondary-white: rgba(255, 255, 255, 0.6)*/
-/*primary-background-color: #F5F5F5;*/
-/*secondary-background-color: ##F5F4FA;*/
-
-
-
 :root {
     --primary-background-color: #F5F5F5;
     --secondary-background-color: #F5F4FA;
@@ -21,11 +8,18 @@
     --secondary-white: rgba(255, 255, 255, 0.6);
     --brand-color: #000000;
     --footer-bg-color: #2F303A;
+    --main-font-family: Roboto;
+
 }
  body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
-    font-family: Roboto, sans-serif;
+    font-family: var(--main-font-family), sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
  }
 
 .list {
@@ -35,53 +29,75 @@
     text-decoration: none;
  }
 
-/*Стилі index.html*/
+/*Стилі main index.html*/
 /*header*/
 .logo {
     color: var(--brand-color);
     text-decoration: none;
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
 }
 .logo-accent {
     color: var(--accent-color);
 }
 
+.site-nav,
+.contact-nav {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
 .site-nav .link {
     color: var(--secondary-text-color);
-    text-decoration: none;
 }
 .site-nav .link:hover, 
-.site-nav .link:focus {
-    color: var(--accent-color);
-}
-.site-nav .link.current {
+.site-nav .link:focus,
+.site-nav .link.current,
+.contact-nav .link:hover,
+.contact-nav .link:focus {
     color: var(--accent-color);
 }
 
 .contact-nav .link {
     color: var(--primary-text-color);
 }
-.contact-nav .link:hover,
-.contact-nav .link:focus {
-    color: var(--accent-color)
+ {
+    color: var(--accent-color);
 }
 
 /*section hero*/
 .hero-title {
-    color: var(--primary-white-color)
+    color: var(--primary-white-color);
+    font-family: var(--main-font-family);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
 }
 /*button hero*/
 .button {
     color: var(--secondary-text-color);
     background-color: var(--secondary-background-color);
     border: var(--secondary-background-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+}
+.button.hero-em {
+    letter-spacing: 0.06em;
 }
 .button.primary {
     color: var(--primary-white-color);
     background: var(--accent-color);
-    border: var(--accent-color);
 }
-
+.pointer {
+    cursor: pointer;
+}
 .button:hover,
 .button:focus,
 .button:active {
@@ -92,9 +108,38 @@
 
 .section-title {
     color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+    text-transform: uppercase;
 }
-.title {
+.features .title {
     color: var(--secondary-text-color);
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.features .text {
+    line-height: 1.71;
+    /* or 171% */
+}
+
+.team .title {
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.team .text {
+    color:var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.2;
 }
 
 /*footer*/
@@ -109,19 +154,46 @@
 }
 .guide {
     color: var(--primary-white-color);
-
+    line-height: 1.71;
+    /* or 171% */
 }
 .contact {
     color: var(--secondary-white);
+    line-height: 1.71;
+    /* or 171% */
 }
 .contacts .contact:hover,
 .contacts .contact:focus {
     color: var(--accent-color)
 }
 
-/*Стилі portfolio.html*/
+/*Стилі main portfolio.html*/
+.filter {
+    color: var(--secondary-text-color);
+   
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
 .button.filter:hover,
 .button.filter:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
+
+.projects .title {
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project .filter-item {
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.88;
+}
+    
