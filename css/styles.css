@@ -40,6 +40,7 @@
 .logo {
     color: var(--brand-color);
     text-decoration: none;
+    font-family: Raleway, sans-serif;
 }
 .logo-accent {
     color: var(--accent-color);
@@ -75,10 +76,11 @@
     background-color: var(--secondary-background-color);
     border: var(--secondary-background-color);
 }
-/*.button.active {
+.button.primary {
     color: var(--primary-white-color);
     background: var(--accent-color);
-    border: var(--accent-color);*/
+    border: var(--accent-color);
+}
 
 .button:hover,
 .button:focus,
@@ -96,7 +98,7 @@
 }
 
 /*footer*/
-footer {
+.footer {
     background-color: var(--footer-bg-color);
 }
 .footer .logo {
@@ -112,8 +114,14 @@ footer {
 .contact {
     color: var(--secondary-white);
 }
+.contacts .contact:hover,
+.contacts .contact:focus {
+    color: var(--accent-color)
+}
+
 /*Стилі portfolio.html*/
-.button.filter:hover {
+.button.filter:hover,
+.button.filter:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
