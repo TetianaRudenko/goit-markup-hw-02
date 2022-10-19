@@ -9,7 +9,6 @@
     --brand-color: #000000;
     --footer-bg-color: #2F303A;
     --main-font-family: Roboto;
-
 }
  body {
     background-color: var(--primary-background-color);
@@ -20,14 +19,14 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
- }
+}
 
 .list {
     list-style: none;
- }
+}
 .link {
     text-decoration: none;
- }
+}
 
 /*Стилі main index.html*/
 /*header*/
@@ -49,6 +48,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 .site-nav .link {
     color: var(--secondary-text-color);
 }
@@ -63,13 +63,11 @@
 .contact-nav .link {
     color: var(--primary-text-color);
 }
- {
-    color: var(--accent-color);
-}
 
 /*section hero*/
 .hero-title {
     color: var(--primary-white-color);
+    
     font-family: var(--main-font-family);
     font-weight: 900;
     font-size: 44px;
@@ -83,6 +81,7 @@
     color: var(--secondary-text-color);
     background-color: var(--secondary-background-color);
     border: var(--secondary-background-color);
+    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
