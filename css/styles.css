@@ -8,10 +8,12 @@
     --secondary-white: rgba(255, 255, 255, 0.6);
     --brand-color: #000000;
     --footer-bg-color: #2F303A;
+
     --main-font-family: Roboto;
+    --logo-font-family: Raleway;
 }
  body {
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-white-color);
     color: var(--primary-text-color);
     font-family: var(--main-font-family), sans-serif;
     font-style: normal;
@@ -33,7 +35,7 @@
 .logo {
     color: var(--brand-color);
     text-decoration: none;
-    font-family: 'Raleway';
+    font-family: var(--logo-font-family);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -112,8 +114,8 @@
     font-size: 36px;
     line-height: 1.7;
     text-align: center;
-    text-transform: uppercase;
 }
+/*Features*/
 .features .title {
     color: var(--secondary-text-color);
 
@@ -125,7 +127,13 @@
     line-height: 1.71;
     /* or 171% */
 }
-
+/*Team section*/
+.team.section {
+    background-color: var(--secondary-background-color);
+}
+.avatar {
+    background-color: var(--primary-white-color);
+}
 .team .title {
     color: var(--secondary-text-color);
 
@@ -167,6 +175,9 @@
 }
 
 /*Стилі main portfolio.html*/
+/*.portfolio.section {
+    
+}*/
 .filter {
     color: var(--secondary-text-color);
    
@@ -179,7 +190,11 @@
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
-
+.project.card {
+    background-color: var(--primary-white-color);
+    border: 1px solid #EEEEEE;
+    /*solid dotted double*/
+}
 .projects .title {
     color: var(--secondary-text-color);
 
